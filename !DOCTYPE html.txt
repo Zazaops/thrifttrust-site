@@ -1,0 +1,151 @@
+!DOCTYPE html
+html lang=en
+head
+  meta charset=UTF-8 
+  meta name=viewport content=width=device-width, initial-scale=1.0 
+  titleThriftTrust Kenyatitle
+  style
+    root {
+      --black #0A0A0A;
+      --white #F1F1F1;
+      --green #3FA34D;
+    }
+
+    body {
+      margin 0;
+      font-family Arial, sans-serif;
+      background-color var(--black);
+      color var(--white);
+    }
+
+    header {
+      background-color var(--black);
+      padding 1rem 1.5rem;
+      display flex;
+      flex-wrap wrap;
+      justify-content space-between;
+      align-items center;
+      border-bottom 1px solid var(--green);
+    }
+
+    nav {
+      display flex;
+      flex-wrap wrap;
+      justify-content center;
+      width 100%;
+      margin-top 0.5rem;
+    }
+
+    nav a {
+      margin 0.5rem;
+      color var(--green);
+      text-decoration none;
+      font-weight bold;
+      font-size 0.9rem;
+    }
+
+    .hero {
+      text-align center;
+      padding 2.5rem 1rem;
+    }
+
+    .hero h1 {
+      font-size 2rem;
+      margin-bottom 1rem;
+    }
+
+    .section {
+      padding 1.5rem 1rem;
+      border-top 1px solid var(--green);
+    }
+
+    .sellers {
+      display grid;
+      grid-template-columns 1fr;
+      gap 1rem;
+    }
+
+    @media (min-width 600px) {
+      .sellers {
+        grid-template-columns repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+
+    .card {
+      background #111;
+      padding 1rem;
+      border 1px solid var(--green);
+      border-radius 8px;
+    }
+
+    iframe {
+      width 100%;
+      max-width 100%;
+      border none;
+    }
+
+    footer {
+      text-align center;
+      padding 1rem;
+      border-top 1px solid var(--green);
+      color var(--green);
+    }
+  style
+head
+body
+  header
+    divstrongThriftTrust Kenyastrongdiv
+    nav
+      a href=#homeHomea
+      a href=#sellersVerified Sellersa
+      a href=#verifyGet Verifieda
+      a href=#whyWhy Trust Usa
+      a href=#contactContacta
+    nav
+  header
+
+  section class=hero id=home
+    h1Verified Kenyan Thrift Sellers You Can Trusth1
+    pConnecting real buyers with real thrift shops. No scams. No BS.p
+  section
+
+  section class=section id=sellers
+    h2Verified Sellersh2
+    div class=sellers
+      div class=card
+        h3@VintageNairobih3
+        pFocus Y2K & Cargo Streetwearp
+        p📍 Nairobip
+        a href=httpsinstagram.comvintagenairobi target=_blankDM on Instagrama
+      div
+      div class=card
+        h3@ClosetPlug254h3
+        pFocus Jackets & Winterwearp
+        p📍 Eldoretp
+        a href=httpsinstagram.comclosetplug254 target=_blankDM on Instagrama
+      div
+    div
+  section
+
+  section class=section id=verify
+    h2Become a Verified Sellerh2
+    pGet visibility. Build trust. Boost sales. Fill the form below to applyp
+    iframe src=httpsforms.gleYOUR-FORM-LINK height=600pxiframe
+  section
+
+  section class=section id=why
+    h2Why Trust Ush2
+    pWe only verify sellers who consistently deliver, communicate clearly, and meet our quality standards. No shady pages. No ghost accounts.p
+  section
+
+  section class=section id=contact
+    h2Contacth2
+    pInstagram a href=httpsinstagram.comthrifttrust.ke target=_blank@thrifttrust.keap
+    pEmail thrifttrustke@gmail.comp
+  section
+
+  footer
+    &copy; 2025 ThriftTrust Kenya. Built for the people.
+  footer
+body
+html
