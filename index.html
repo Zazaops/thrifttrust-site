@@ -1,151 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThriftTrust Kenya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThriftTrust KE</title>
   <style>
-    :root {
-      --black: #0A0A0A;
-      --white: #F1F1F1;
-      --green: #3FA34D;
-    }
-
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: var(--black);
-      color: var(--white);
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #000;
     }
-
-    header {
-      background-color: var(--black);
-      padding: 1rem 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--green);
+    header, section, footer {
+      padding: 20px;
+      text-align: center;
     }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-      margin-top: 0.5rem;
+    .hero {
+      background: #000;
+      color: #fff;
+      padding: 60px 20px;
     }
-
-    nav a {
-      margin: 0.5rem;
-      color: var(--green);
+    .cta-btn {
+      background: #f2c94c;
+      color: #000;
+      padding: 10px 20px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 20px;
+      border-radius: 5px;
     }
-
-    .hero {
-      text-align: center;
-      padding: 2.5rem 1rem;
+    .trust-cards, .product-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
     }
-
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .card, .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 250px;
+      border-radius: 5px;
     }
-
-    .section {
-      padding: 1.5rem 1rem;
-      border-top: 1px solid var(--green);
-    }
-
-    .sellers {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-
-    @media (min-width: 600px) {
-      .sellers {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      }
-    }
-
-    .card {
-      background: #111;
-      padding: 1rem;
-      border: 1px solid var(--green);
-      border-radius: 8px;
-    }
-
-    iframe {
+    .product-card img {
       width: 100%;
-      max-width: 100%;
-      border: none;
+      height: auto;
+      border-radius: 5px;
     }
-
+    .buy-btn {
+      background: #27ae60;
+      color: #fff;
+      padding: 8px 15px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
     footer {
-      text-align: center;
-      padding: 1rem;
-      border-top: 1px solid var(--green);
-      color: var(--green);
+      background: #000;
+      color: #fff;
+      margin-top: 40px;
+    }
+    input[type="email"] {
+      padding: 8px;
+      width: 200px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div><strong>ThriftTrust Kenya</strong></div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#sellers">Verified Sellers</a>
-      <a href="#verify">Get Verified</a>
-      <a href="#why">Why Trust Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <h1>Verified Thriftwear. No Scams. No Stress.</h1>
+    <p>Browse drops from trusted sellers. Pay with confidence.</p>
+    <a href="#drops" class="cta-btn">Browse Verified Drops</a>
   </header>
 
-  <section class="hero" id="home">
-    <h1>Verified Kenyan Thrift Sellers You Can Trust</h1>
-    <p>Connecting real buyers with real thrift shops. No scams. No BS.</p>
-  </section>
-
-  <section class="section" id="sellers">
-    <h2>Verified Sellers</h2>
-    <div class="sellers">
+  <section class="trust">
+    <h2>Why Trust Us?</h2>
+    <div class="trust-cards">
       <div class="card">
-        <h3>@VintageNairobi</h3>
-        <p>Focus: Y2K & Cargo Streetwear</p>
-        <p>📍 Nairobi</p>
-        <a href="https://instagram.com/vintagenairobi" target="_blank">DM on Instagram</a>
+        <h3>✅ Verified Sellers</h3>
+        <p>Each seller is vetted for quality and reliability.</p>
       </div>
       <div class="card">
-        <h3>@ClosetPlug254</h3>
-        <p>Focus: Jackets & Winterwear</p>
-        <p>📍 Eldoret</p>
-        <a href="https://instagram.com/closetplug254" target="_blank">DM on Instagram</a>
+        <h3>📸 Real Reviews</h3>
+        <p>What you see is what you get. No fakes, no filters.</p>
+      </div>
+      <div class="card">
+        <h3>🚚 Safe Delivery</h3>
+        <p>Nationwide delivery with safe payment options.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="verify">
-    <h2>Become a Verified Seller</h2>
-    <p>Get visibility. Build trust. Boost sales. Fill the form below to apply:</p>
-    <iframe src="https://forms.gle/YOUR-FORM-LINK" height="600px"></iframe>
-  </section>
-
-  <section class="section" id="why">
-    <h2>Why Trust Us</h2>
-    <p>We only verify sellers who consistently deliver, communicate clearly, and meet our quality standards. No shady pages. No ghost accounts.</p>
-  </section>
-
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Instagram: <a href="https://instagram.com/thrifttrust.ke" target="_blank">@thrifttrust.ke</a></p>
-    <p>Email: thrifttrustke@gmail.com</p>
+  <section id="drops">
+    <h2>🔥 Latest Drops</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/air-force-1.jpg" alt="Nike Air Force 1">
+        <p>Air Force 1 – KSh 3500</p>
+        <a href="https://wa.me/2547XXXXXXX" class="buy-btn">Get This Piece</a>
+      </div>
+      <div class="product-card">
+        <img src="images/vintage-jacket.jpg" alt="Vintage Jacket">
+        <p>Vintage Jacket – KSh 2500</p>
+        <a href="https://wa.me/2547XXXXXXX" class="buy-btn">Get This Piece</a>
+      </div>
+      <div class="product-card">
+        <img src="images/denim-jeans.jpg" alt="Denim Jeans">
+        <p>Denim Jeans – KSh 2000</p>
+        <a href="https://wa.me/2547XXXXXXX" class="buy-btn">Get This Piece</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 ThriftTrust Kenya. Built for the people.
+    <p>Follow us: <a href="https://instagram.com/thrifttrustke" style="color:#f2c94c;">@thrifttrustke</a></p>
+    <p>Contact via <a href="https://wa.me/2547XXXXXXX" style="color:#f2c94c;">WhatsApp</a></p>
+    <p>Join The Trust List:</p>
+    <input type="email" placeholder="Enter your email">
   </footer>
 </body>
 </html>
